@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #080202;
+    background-color: #a9a1ec;
     font-family: 'League Spartan', sans-serif;
 }
 
@@ -19,31 +19,31 @@ body{
 }
 
 .swiper-button-prev::after{
-    font-size: 25px;
+    font-size: 35px;
 }
 .swiper-button-next::after{
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .swiper-button-next{
-    color: #DB241B;
+    color: #6705d8;
 }
 .swiper-button-prev{
-    color: #DB241B;
+    color: #6705d8;
 }
 
 .swiper-pagination-bullet{
-    background-color: #D3D2D2;
+    background-color: #f1f1f1;
     opacity: 1;
 }
 
 .swiper-pagination-bullet-active{
-    background-color: #DB241B;
+    background-color: #6812a1;
 }
 
 .menu{
     position: absolute;
-    top: 20px;
+    top: 8px;
     left: 0;
     right: 0;
     display: flex;
@@ -68,7 +68,7 @@ body{
     width: 0;
 }
 .logo-2{
-    width: 150px;
+    width: 250px;
 }
 
 .socials{
@@ -79,12 +79,12 @@ body{
     margin: 0 10px;
     height: 40px;
     width: 40px;
-    border: 1px solid #DB241B;
+    border: 1px solid #6705d8;
     border-radius: 50%;
 }
 
 .social:hover{
-    background-color: #DB241B;
+    background-color: #6705d8;
 }
 
 .social img{
@@ -97,14 +97,14 @@ body{
 }
 
 .menu .navbar ul li a{
-    font-size: 18px;
+    font-size: 30px;
     padding: 20px;
     color: #FFFFFF;
     display: block;
 }
 
 .menu .navbar ul li a:hover{
-    color: #DB241B;
+    color: #6705d8;
 }
 
 #menu{
@@ -112,7 +112,7 @@ body{
 }
 
 .menu-icono{
-    width: 25px;
+    width: 35px;
 }
 
 .menu label{
@@ -121,7 +121,7 @@ body{
 }
 
 .header-content{
-    margin-top: 200px;
+    margin-top: 300px;
     padding-bottom: 50px;
 }
 
@@ -135,15 +135,17 @@ body{
     width: 50%;
 }
 .slider-txt h1{
-    font-size: 70px;
+    font-size: 50px;
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 800;
 }
 
 .slider-txt p{
-    font-size: 18px;
-    color: #A7A7A7;
+    font-size: 20px;
+    margin-right: 15%;
+    text-align: justify;
+    color: #030108;
 }
 
 .botones{
@@ -153,7 +155,7 @@ body{
 .btn-1{
     display: inline-block;
     padding: 15px 35px;
-    border: 2px solid #DB241B;
+    border: 2px solid #6705d8;
     color: #FFFFFF;
     font-weight: 800;
     letter-spacing: 2px;
@@ -163,7 +165,7 @@ body{
 }
 
 .btn-1:hover{
-    background-color: #DB241B;
+    background-color: #6705d8;
 }
 
 .slider-img{
@@ -172,12 +174,12 @@ body{
 
 .slider-img img{
     margin-right: 225px;
-    width: 500px;
+    width: 520px;
     border-radius: 5%;
 }
 
 .products{
-    background-color: #3497af;
+    background-color: #602ca563;
 }
 
 .tabs{
@@ -187,15 +189,15 @@ body{
 }
 
 .tabs label{
-    width: 15%;
+    width: 32%;
     order: 1;
     display: block;
     padding: 20px 0px;
     text-align: center;
     cursor: pointer;
-    color: #a7a7a7;
+    color: #ffffff;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 30px;
     text-transform: uppercase;
     transition: background ease 0.2s;
 }
@@ -212,8 +214,8 @@ body{
     display: none;
 }
 .tabs input[type="radio"]:checked + label{
-    border-bottom: 2px solid #DB241B;
-    color: #ffffff;
+    border-bottom: 2px solid #6705d8;
+    color: #6705d8;
 }
 
 .tabs input[type="radio"]:checked + label + .tab{
@@ -225,11 +227,10 @@ body{
     align-items: center;
     padding: 25px;
     margin: 0 10px;
-
 }
 
 .product-img{
-    width: 50%;
+    width: 30%;
     text-align: left;
 }
 
@@ -241,33 +242,33 @@ body{
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 800;
-    border: 2px solid #555555;
+    border: 2px solid #6705d8;
     border-radius: 10px;
     margin-bottom: 50px;
 }
 
 .product-img img{
-    width: 150px;
-    height: 120px;
+    width: 220px;
+    height: 220px;
 }
 
 .product-txt{
-    width: 50%;
+    width: 60%;
     margin-left: 10px;
-    text-align: left;
+    text-align: justify;
 }
 
 .product-txt h4{
     color: #ffffff;
-    font-size: 18px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: 800;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .product-txt p{
-    color: #a7a7a7;
-    font-size: 16px;
+    color: #181818;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
@@ -305,15 +306,17 @@ body{
 }
 
 .info-txt p{
-    font-size: 18px;
-    color: #a7a7a7;
+    font-size: 25px;
+    text-align: justify;
+    color: #181818;
     margin-bottom: 50px;
 }
 
 .btn-2{
     display: inline-block;
     padding: 15px 35px;
-    background-color: #DB241B;
+    border: 2px solid #6705d8;
+    background-color: #a9a1ec;
     color: #ffffff;
     font-weight: 800;
     text-transform: uppercase;
@@ -321,12 +324,12 @@ body{
 }
 
 .btn-2:hover{
-    background-color: #ab1c15;
+    background-color: #6705d8;
 }
 
 .horario{
     padding: 100px 0px;
-    background-color: #0d0d0d;
+    background-color: #602ca563;
 }
 
 .horario-info h2{
@@ -348,7 +351,7 @@ body{
 
 .txt h4{
     font-size: 18px;
-    color: #a7a7a7;
+    color: #6705d8;
     margin-bottom: 30px;
 }
 
@@ -358,7 +361,6 @@ body{
     font-weight: 600;
     margin-bottom: 15px;
 }
-
 
 .map{
     filter: grayscale(100%) invert(92%) contrast(93%);
@@ -371,7 +373,7 @@ body{
 }
 
 .links h4{
-    color: #ffffff;
+    color: #6705d8;
     text-transform: uppercase;
     margin-bottom: 25px;
 }
@@ -379,14 +381,14 @@ body{
 .links ul li a{
     color: #ffffff;
     font-size: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     display: inline-block;
 }
 
 @media(max-width: 991px){
 
     .menu{
-        padding: 20px;
+        padding: 10px;
         justify-content: space-between;
     }
 
@@ -395,7 +397,8 @@ body{
     }
 
     .logo-1{
-        width: 100px;
+        margin-left: 33%;
+        width: 280px;
     }
 
     .logo-2{
@@ -424,8 +427,8 @@ body{
     }
 
     .header-content{
-        padding: 30px;
-        margin-top: 100px;
+        padding: 50px;
+        margin-top: 200px;
     }
 
     .slider{
@@ -439,12 +442,14 @@ body{
         margin-bottom: 50px;
     }
 
-    .slider-txt p{
+    .slider-txt h1{
         font-size: 50px;
     }
 
     .slider-txt p{
-        font-size: 16px;
+        margin-top: 5%;
+        margin-left: 14%;
+        font-size: 20px;
     }
 
     .btn-1{
@@ -459,10 +464,10 @@ body{
 
     .slider-img img{
         margin-right: 0px;
-        width: 300px;
+        width: 350px;
     }
 
-    .swiper-horizontal >.swiper-pagination-bullets,
+    .swiper-horizontal > .swiper-pagination-bullets,
     .swiper-pagination-bullets,.swiper-pagination-horizontal,
     .swiper-pagination-custom,
     .swiper-pagination-fraction{
@@ -503,7 +508,7 @@ body{
     }
 
     .info-txt p{
-        font-size: 16px;
+        font-size: 25px;
     }
 
     .btn-1{
@@ -511,7 +516,7 @@ body{
     }
 
     .horario{
-        padding: 30px;
+        padding: 35px;
         text-align: center;
     }
 
@@ -541,6 +546,4 @@ body{
     .links h4{
         margin: 25px 0px 10px 0px;
     }
-
-
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Monitoreo para Adultos Mayores</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -22,13 +22,13 @@
       </label>
       <nav class="navbar">
         <div class="menu-1">
-          <u1>
+          <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Productos</a></li>
-          </u1>
+            <li><a href="#">Sensores</a></li>
+            <li><a href="#">Nosotros</a></li>
+          </ul>
         </div>
-        <img class="logo-2" src="Imagenes/3.jpeg" alt="" />
+        <img class="logo-2" src="Imagenes/logo.jpg" alt="" />
         <div class="menu-2">
           <ul>
             <li><a href="#">Horario</a></li>
@@ -59,11 +59,32 @@
       <div class="swiper mySwiper-1">
         <div class="swiper-wrapper">
           
-          <!-repetir las veces que se quiera->
+          <!--repetir las veces que se quiera-->
           <div class="swiper-slide">
             <div class="slider">
               <div class="slider-txt">
-                <h1>Monitoreo en tu muñeca</h1>
+                <h1>Monitoreo de Sedentarismo en Adultos Mayores</h1>
+                <p>
+                  Nuestro reloj inteligente detecta comportamientos sedentarios en adultos mayores, 
+                  ayudando a promover un estilo de vida más activo y saludable. Gracias a la tecnología 
+                  del giroscopio y acelerómetro mpu6050, el reloj puede identificar períodos de inactividad 
+                  y enviar recordatorios para moverse.
+                </p>
+                <div class="botones">
+                  <a href="#" class="btn-1">Nosotros</a>
+                  <a href="#" class="btn-1">Información</a>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="Imagenes/PRINCIPAL.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--hasta aqui-->
+          <div class="swiper-slide">
+            <div class="slider">
+              <div class="slider-txt">
+                <h1>Sensor 1</h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quis esse consequuntur repellendus. Velit at quibusdam nobis
@@ -79,42 +100,22 @@
               </div>
             </div>
           </div>
-          <!-hasta aqui->
           <div class="swiper-slide">
             <div class="slider">
               <div class="slider-txt">
-                <h1>Torta</h1>
+                <h1>Sensor 2</h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quis esse consequuntur repellendus. Velit at quibusdam nobis
                   quod debitis amet dolor
                 </p>
                 <div class="botones">
-                  <a href="#" class="btn-1">Comprar</a>
-                  <a href="#" class="btn-1">Menu</a>
+                  <a href="#" class="btn-1">Nosotros</a>
+                  <a href="#" class="btn-1">Información</a>
                 </div>
               </div>
               <div class="slider-img">
-                <img src="Imagenes/8.jpeg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slider">
-              <div class="slider-txt">
-                <h1>perro</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quis esse consequuntur repellendus. Velit at quibusdam nobis
-                  quod debitis amet dolor
-                </p>
-                <div class="botones">
-                  <a href="#" class="btn-1">Comprar</a>
-                  <a href="#" class="btn-1">Menu</a>
-                </div>
-              </div>
-              <div class="slider-img">
-                <img src="Imagenes/9.jpeg" alt="" />
+                <img src="Imagenes/PRINCIPAL.png" alt="" />
               </div>
             </div>
           </div>
@@ -126,341 +127,310 @@
     </div>
   </header>
 
-    <main class="Products">
-      <div class="tabs container">
-        <!-repetir desde aqui->
-        <input
-          type="radio"
-          name="tabs"
-          id="tab1"
-          checked="checked"
-          class="tabInput"
-          value="1"
-        />
-        <label for="tab1">Hamburguesas</label>
-        <div class="tab">
-          <div class="swiper mySwiper-2" id="swiper1">
-            <div class="swiper-wrapper">
-              <!-repetir las veces que se quiera->
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="Imagenes/10.jpeg" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>calidad premium</p>
-                    <span class="price">$5000 pesos</span>
-                  </div>
+  <main class="products">
+    <div class="tabs container">
+      
+      <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1"/><!--repetir desde aqui-->   
+      <label for="tab1">DESCRIPCIÓN</label>
+      <div class="tab">
+        <div class="swiper mySwiper-2" id="swiper1"><!--modificar id aqui-->
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide"><!--repetir las veces que se quiera-->
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="Imagenes/10.jpeg" alt="" />
+                </div>
+                <div class="product-txt">
+                  <h4>Producto</h4>
+                  <p>El reloj está equipado con el sensor mpu6050, que combina un giroscopio y
+                     un acelerómetro para detectar movimientos y orientación. Además, cuenta con
+                     tecnología NFC que permite el registro de adultos mayores simplemente acercando
+                     el reloj a una base, facilitando el control de asistencia.
+                  </p>
+                  <span class="price">$5000 pesos</span>
                 </div>
               </div>
-              <!-hasta aqui->
-              <!-repetir las veces que se quiera->
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="Imagenes/11.jpeg" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>calidad premium</p>
-                    <span class="price">$5000 pesos</span>
-                  </div>
+            </div><!--hasta aqui-->     
+              
+            <div class="swiper-slide"><!--repetir las veces que se quiera-->
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="Imagenes/11.jpeg" alt="" />
+                </div>
+                <div class="product-txt">
+                  <h4>Producto</h4>
+                  <p>calidad premium</p>
+                  <span class="price">$5000 pesos</span>
                 </div>
               </div>
-              <!-hasta aqui->
-              <!-repetir las veces que se quiera->
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="Imagenes/12.jpeg" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>calidad premium</p>
-                    <span class="price">$5000 pesos</span>
-                  </div>
-                </div>
-              </div>
-              <!-hasta aqui->
-            </div>
+            </div><!--hasta aqui-->
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-slide"><!--repetir las veces que se quiera-->
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="Imagenes/12.jpeg" alt="" />
+                </div>
+                <div class="product-txt">
+                  <h4>Producto</h4>
+                  <p>calidad premium</p>
+                  <span class="price">$5000 pesos</span>
+                </div>
+              </div>
+            </div><!--hasta aqui-->
+              
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <!-repetir hasta aqui->
+      </div><!--repetir hasta aqui-->
 
-        <input
-          type="radio"
-          name="tabs"
-          id="tab2"
-          checked="checked"
-          class="tabInput"
-          value="2"
-        />
-        <label for="tab2">burritos</label>
-        <div class="tab">
-          <div class="swiper mySwiper-2" id="swiper2">
-            <div class="swiper-wrapper">
-              <!-repetir las veces que se quiera->
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="Imagenes/13.jpeg" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>calidad premium</p>
-                    <span class="price">$5000 pesos</span>
-                  </div>
+      <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2"/><!--repetir desde aqui-->
+      <label for="tab2">MPU6050</label>
+      <div class="tab">
+        <div class="swiper mySwiper-2" id="swiper2"><!--modificar id aqui-->
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide"><!--repetir las veces que se quiera-->
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="Imagenes/13.jpeg" alt="" />
+                </div>
+                <div class="product-txt">
+                  <h4>Producto</h4>
+                  <p>El reloj está equipado con el sensor mpu6050, que combina un giroscopio y
+                    un acelerómetro para detectar movimientos y orientación. Además, cuenta con
+                    tecnología NFC que permite el registro de adultos mayores simplemente acercando
+                    el reloj a una base, facilitando el control de asistencia.
+                  </p>
+                  <span class="price">$5000 pesos</span>
                 </div>
               </div>
-              <!-hasta aqui->
-              <!-repetir las veces que se quiera->
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="Imagenes/14.jpeg" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>calidad premium</p>
-                    <span class="price">$5000 pesos</span>
-                  </div>
+            </div><!--hasta aqui-->
+
+            <div class="swiper-slide"><!--repetir las veces que se quiera-->
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="Imagenes/14.jpeg" alt="" />
+                </div>
+                <div class="product-txt">
+                  <h4>Producto</h4>
+                  <p>calidad premium</p>
+                  <span class="price">$5000 pesos</span>
                 </div>
               </div>
-              <!-hasta aqui->
-              <!-repetir las veces que se quiera->
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="Imagenes/15.jpeg" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>calidad premium</p>
-                    <span class="price">$5000 pesos</span>
-                  </div>
+            </div><!--hasta aqui-->
+
+            <div class="swiper-slide"><!--repetir las veces que se quiera-->
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="Imagenes/15.jpeg" alt="" />
+                </div>
+                <div class="product-txt">
+                  <h4>Producto</h4>
+                  <p>calidad premium</p>
+                  <span class="price">$5000 pesos</span>
                 </div>
               </div>
-              <!-hasta aqui->
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            </div><!--hasta aqui-->
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
+      </div><!--repetir hasta aqui-->
 
-        <input
-          type="radio"
-          name="tabs"
-          id="tab3"
-          checked="checked"
-          class="tabInput"
-          value="3"
-        />
-        <label for="tab3">perrotes</label>
-        <div class="tab">
-          <div class="swiper mySwiper-2" id="swiper3">
-            <!-modificar id aqui->
-            <div class="swiper-wrapper">
-              <!-repetir las veces que se quiera->
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="Imagenes/16.jpeg" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>calidad premium</p>
-                    <span class="price">$5000 pesos</span>
-                  </div>
+      <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3"/>
+      <label for="tab3">NFC</label>
+      <div class="tab">
+        <div class="swiper mySwiper-2" id="swiper3"><!--modificar id aqui-->
+          <div class="swiper-wrapper">
+              
+            <div class="swiper-slide"><!--repetir las veces que se quiera-->
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="Imagenes/16.jpeg" alt="" />
+                </div>
+                <div class="product-txt">
+                  <h4>Producto</h4>
+                  <p>calidad premium</p>
+                  <span class="price">$5000 pesos</span>
                 </div>
               </div>
-              <!-hasta aqui->
-              <!-repetir las veces que se quiera->
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="Imagenes/17.jpeg" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>calidad premium</p>
-                    <span class="price">$5000 pesos</span>
-                  </div>
+            </div><!--hasta aqui-->
+
+            <div class="swiper-slide"><!--repetir las veces que se quiera-->
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="Imagenes/17.jpeg" alt="" />
+                </div>
+                <div class="product-txt">
+                  <h4>Producto</h4>
+                  <p>calidad premium</p>
+                  <span class="price">$5000 pesos</span>
                 </div>
               </div>
-              <!-hasta aqui->
-              <!-repetir las veces que se quiera->
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="Imagenes/18.jpeg" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>calidad premium</p>
-                    <span class="price">$5000 pesos</span>
-                  </div>
+            </div><!--hasta aqui-->
+
+            <div class="swiper-slide"><!--repetir las veces que se quiera-->
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="Imagenes/18.jpeg" alt="" />
+                </div>
+                <div class="product-txt">
+                  <h4>Producto</h4>
+                  <p>calidad premium</p>
+                  <span class="price">$5000 pesos</span>
                 </div>
               </div>
-              <!-hasta aqui->
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            </div><!--hasta aqui-->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div><!--repetir hasta aqui-->
+
+    </div>
+  </main>
+
+  <section class="info container">
+    <div class="info-img">
+      <img src="Imagenes/19.jpeg" alt="" />
+    </div>
+
+    <div class="info-txt">
+      <h2>Información</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        dignissimos asperiores natus ex accusantium recusandae molestias velit
+        molestiae. Qui blanditiis neque, optio architecto eos amet.
+      </p>
+      <a href="#" class="btn-2">Más información</a>
+    </div>
+  </section>
+
+  <section class="horario">
+    <div class="horario-info container">
+
+      <h2>Contacto</h2>
+      <div class="horario-txt">
+        <div class="txt">
+          <h4>DIRECCIÓN</h4>
+          <p>
+            Cra. 7 #40 - 62
+          </p>
+        </div>
+        <div class="txt">
+          <h4>HORARIO</h4>
+          <p>
+            lunes a viernes 9AM-4PM
+          </p>
+        </div>
+        <div class="txt">
+          <h4>TELEFONO</h4>
+            <p>
+              3333333333
+            </p>
+            <p>
+              5555555555
+            </p>
+        </div>
+        <div class="txt">
+          <h4>CORREOS</h4>
+            <p>
+              santiagoa.mesan@javerina.edu.co
+            </p>
+            <p>
+              santiagolynett@javeriana.edu.co
+            </p>
+            <p>
+              juanf_soto@javeriana.edu.co
+            </p>
+            <p>
+              smorag@javeriana.edu.co
+            </p>
+        </div>
+        <div class="txt">
+          <h4>REDES SOCIALES</h4>
+          <div class="Socials">
+            <a href="#">
+              <div class="social">
+                <img src="Imagenes/s1.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div class="social">
+                <img src="Imagenes/s2.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div class="social">
+                <img src="Imagenes/s3.svg" alt="" />
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </section>
+        
+  <section>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8070452167635!2d-74.06723942504524!3d4.628487495346264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a8193f1c9f%3A0xf93431640f134c07!2sPontificia%20Universidad%20Javeriana!5e0!3m2!1ses!2sco!4v1696552104541!5m2!1ses!2sco" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
 
-    <section class="info container">
-      <div class="info-img">
-        <img src="Imagenes/19.jpeg" alt="" />
+  <footer class="footer container">
+
+    <img class="logo-2" src="Imagenes/logo.jpg" alt="">
+      <div class="links">
+        <h4>GITHUB</h4>
+        <ul>
+          <li><a href="#">links github o x</a></li>
+          <li><a href="#">links github o x</a></li>
+          <li><a href="#">links github o x</a></li>
+        </ul>
       </div>
-
-      <div class="info-txt">
-        <h2>Informacion</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          dignissimos asperiores natus ex accusantium recusandae molestias velit
-          molestiae. Qui blanditiis neque, optio architecto eos amet.
-        </p>
-        <a href="#" class="btn-2">Más información</a>
+      <div class="links">
+        <h4>LINKEDIN</h4>
+        <ul>
+          <li><a href="#">links github o x</a></li>
+          <li><a href="#">links github o x</a></li>
+          <li><a href="#">links github o x</a></li>
+        </ul>
       </div>
-
-    </section class="horario">
-        <div class="horario-info container">
-
-            <h2>Contacto</h2>
-            <div class="horario-txt">
-                <div class="txt">
-                    <h4>DIRECCIÓN</h4>
-                    <p>
-                      Cra. 7 #40 - 62
-                    </p>
-                </div>
-                <div class="txt">
-                    <h4>HORARIO</h4>
-                    <p>
-                        lunes a viernes 9AM-4PM
-                    </p>
-                </div>
-                <div class="txt">
-                    <h4>TELEFONO</h4>
-                    <p>
-                      3333333333
-                    </p>
-                    <p>
-                      5555555555
-                    </p>
-                </div>
-                <div class="txt">
-                  <h4>CORREOS</h4>
-                    <p>
-                      santiagoa.mesan@javerina.edu.co
-                    </p>
-                    <p>
-                      santiagolynett@javeriana.edu.co
-                    </p>
-                    <p>
-                      juanf_soto@javeriana.edu.co
-                    </p>
-                    <p>
-                      smorag@javeriana.edu.co
-                    </p>
-                </div>
-                <div class="txt">
-                    <h4>REDES SOCIALES</h4>
-                    <div class="Socials">
-                        <a href="#">
-                          <div class="social">
-                            <img src="Imagenes/s1.svg" alt="" />
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="social">
-                            <img src="Imagenes/s2.svg" alt="" />
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="social">
-                            <img src="Imagenes/s3.svg" alt="" />
-                          </div>
-                        </a>
-                    </div>
-                </div>
-
+        
+      <div class="links">
+        <div class="Socials">
+          <a href="#">
+            <div class="social">
+              <img src="Imagenes/s1.svg" alt="" />
             </div>
-        </div>
-
-    <section>
-
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8070452167635!2d-74.06723942504524!3d4.628487495346264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a8193f1c9f%3A0xf93431640f134c07!2sPontificia%20Universidad%20Javeriana!5e0!3m2!1ses!2sco!4v1696552104541!5m2!1ses!2sco" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </section>
-
-    <footer class="footer container">
-
-        <img class="logo-2" src="Imagenes/20.jpeg" alt="">
-        <div class="links">
-            <h4>Lorem o enlace</h4>
-            <ul>
-                <li><a href="#">links github o x</a></li>
-                <li><a href="#">links github o x</a></li>
-                <li><a href="#">links github o x</a></li>
-            </ul>
-        </div>
-        <div class="links">
-            <h4>Lorem o enlace</h4>
-            <ul>
-                <li><a href="#">links github o x</a></li>
-                <li><a href="#">links github o x</a></li>
-                <li><a href="#">links github o x</a></li>
-            </ul>
-        </div>
-        <div class="links">
-            <h4>Lorem o enlace</h4>
-            <ul>
-                <li><a href="#">links github o x</a></li>
-                <li><a href="#">links github o x</a></li>
-                <li><a href="#">links github o x</a></li>
-            </ul>
-        </div>
-        <div class="links">
-            <h4>Lorem o enlace</h4>
-            <div class="Socials">
-                <a href="#">
-                  <div class="social">
-                    <img src="Imagenes/s1.svg" alt="" />
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="social">
-                    <img src="Imagenes/s2.svg" alt="" />
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="social">
-                    <img src="Imagenes/s3.svg" alt="" />
-                  </div>
-                </a>
+          </a>
+          <a href="#">
+            <div class="social">
+              <img src="Imagenes/s2.svg" alt="" />
             </div>
+          </a>
+          <a href="#">
+            <div class="social">
+              <img src="Imagenes/s3.svg" alt="" />
+            </div>
+          </a>
         </div>
-    </footer>
+      </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
+
 </body>
 
 </html>
