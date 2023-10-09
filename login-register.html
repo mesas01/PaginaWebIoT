@@ -4,22 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión / Registrarse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a9a1ec;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        #returnButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: 2px solid #388E3C;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #returnButton:hover {
+            background-color: #388E3C;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #6705d8;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button[type="submit"] {
+            background-color: #a9a1ec;
+            color: white;
+            border: 2px solid #580a85;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #580a85;
+        }
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #4CAF50;
+        }
+
+    </style>
 </head>
 <body>
-    <h2>Iniciar sesión</h2>
-    <form id="loginForm">
-        <input type="text" id="loginUsername" placeholder="Nombre de usuario" required>
-        <input type="password" id="loginPassword" placeholder="Contraseña" required>
-        <button type="submit">Iniciar sesión</button>
-    </form>
+    <button id="returnButton" onclick="window.location.href='index.html'">Regresar a la página principal</button>
 
-    <h2>Registrarse</h2>
-    <form id="registerForm">
-        <input type="text" id="registerUsername" placeholder="Nombre de usuario" required>
-        <input type="password" id="registerPassword" placeholder="Contraseña" required>
-        <button type="submit">Registrarse</button>
-    </form>
+    <div>
+        <h2>Iniciar sesión</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Nombre de usuario" required>
+            <input type="password" id="loginPassword" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+
+        <h2>Registrarse</h2>
+        <form id="registerForm">
+            <input type="text" id="registerUsername" placeholder="Nombre de usuario" required>
+            <input type="password" id="registerPassword" placeholder="Contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
 
     <script src="login-register.js"></script>
 </body>
 </html>
+
+

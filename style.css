@@ -117,9 +117,12 @@ body{
 
 .btn-login-register:hover {
     background-color: #0056b3;
-}
+}/*
+*/
 
+ 
 
+/**/
 #menu{
     display: none;
 }
