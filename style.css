@@ -19,10 +19,10 @@ body{
 }
 
 .swiper-button-prev::after{
-    font-size: 35px;
+    font-size: 45px;
 }
 .swiper-button-next::after{
-    font-size: 35px;
+    font-size: 45px;
 }
 
 .swiper-button-next{
@@ -32,8 +32,8 @@ body{
     color: #6705d8;
 }
 
-.swiper-pagination-bullet{
-    background-color: #f1f1f1;
+.swiper-pagination-bullet{  
+    background-color: #ffffff;
     opacity: 1;
 }
 
@@ -248,8 +248,10 @@ body{
 }
 
 .product-img img{
-    width: 220px;
-    height: 220px;
+    max-width: 100%;
+    height: auto;
+    /*width: 220px;
+    height: 220px;*/
 }
 
 .product-txt{
