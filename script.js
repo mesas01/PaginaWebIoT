@@ -47,3 +47,11 @@ tabInputs.forEach(function(input){
     })
 });
 
+// Selección del botón
+const loginRegisterBtn = document.getElementById('loginRegisterBtn');
+
+// Evento al hacer clic en el botón
+loginRegisterBtn.addEventListener('click', function() {
+    // Redireccionar a la página de inicio de sesión y registro
+    window.location.href = '/login-register.html';
+});

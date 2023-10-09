@@ -106,6 +106,19 @@ body{
 .menu .navbar ul li a:hover{
     color: #6705d8;
 }
+.btn-login-register {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-login-register:hover {
+    background-color: #0056b3;
+}
+
 
 #menu{
     display: none;
