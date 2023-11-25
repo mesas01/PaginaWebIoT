@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Monitoreo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <nav>
+            <!-- Ejemplo de barra de navegación, reemplaza con tu propia estructura -->
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <!-- Agrega aquí más enlaces si es necesario -->
+            </ul>
+        </nav>
+        <!-- Aquí puedes incluir la barra de navegación de tu index.html -->
+        <!-- Asegúrate de actualizar los enlaces de navegación si es necesario -->
+    </header>
+
+    <main class="container">
+        <h1>Dashboard de Monitoreo</h1>
+        <section class="dashboard">
+            <!-- Incrusta los iframes de ThingSpeak aquí -->
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2288436/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Acelerometro+Eje+X&type=column&xaxis=Tiempo+%28s%29&yaxis=Aceleraci%C3%B3n+%28m%2Fs2%29"></iframe>
+
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2288436/widgets/717831"></iframe>
+
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2288436/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Acelerometro+Eje+Y&type=column&xaxis=Tiempo+%28s%29&yaxis=Aceleraci%C3%B3n+%28m%2Fs2%29"></iframe>
+
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2288436/widgets/719322"></iframe>
+
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2288436/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Acelerometro+Eje+Z&type=column&xaxis=Tiempo+%28s%29&yaxis=Aceleraci%C3%B3n+%28m%2Fs2%29"></iframe>
+
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2288436/widgets/755289"></iframe>
+
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2288436/charts/7?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=RFID&type=column"></iframe>
+
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2288436/widgets/719393"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Incluye aquí tu pie de página de index.html -->
+    </footer>
+
+    <!-- No incluir login-register.js si no es necesario para esta página -->
+    <!-- <script src="login-register.js"></script> -->
+    <!-- script.js puede ser incluido si tiene funcionalidades que se aplican a esta página -->
+    <script src="script.js"></script>
+
+</body>
+</html>
