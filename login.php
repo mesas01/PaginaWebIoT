@@ -6,7 +6,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 // Prepara la sentencia SQL para evitar inyecciones SQL
-$stmt = $conn->prepare("SELECT password FROM usuarios WHERE username = ?");
+$stmt = $conn->prepare("SELECT password FROM Usuarios WHERE username = ?");
 $stmt->bind_param("s", $username);
 $stmt->execute();
 $result = $stmt->get_result();

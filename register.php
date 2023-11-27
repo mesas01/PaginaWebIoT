@@ -7,7 +7,7 @@ $password = $_POST['password'];
 $password_hash = password_hash($password, PASSWORD_DEFAULT); // Encripta la contraseña
 
 // Prepara la sentencia SQL para evitar inyecciones SQL
-$stmt = $conn->prepare("INSERT INTO usuarios (username, password) VALUES (?, ?)");
+$stmt = $conn->prepare("INSERT INTO Usuarios (username, password) VALUES (?, ?)");
 $stmt->bind_param("ss", $username, $password_hash);
 
 // Ejecuta la sentencia y verifica si fue exitosa
