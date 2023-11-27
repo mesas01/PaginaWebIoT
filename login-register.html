@@ -77,6 +77,7 @@
             <input type="text" id="loginUsername" name="username" placeholder="Nombre de usuario" required>
             <input type="password" id="loginPassword" name="password" placeholder="Contraseña" required>
             <button type="submit">Iniciar sesión</button>
+            <li><a href="dashboard.html" class="btn-login-register">Iniciar/Registrarse</a></li>
         </form>
 
         <h2>Registrarse</h2>
@@ -88,5 +89,18 @@
     </div>
 
     <script src="login-register.js"></script>
+    <script>
+        window.onload = function() {
+            // Comprobar si la URL tiene el parámetro 'error'
+            const urlParams = new URLSearchParams(window.location.search);
+            const error = urlParams.get('error');
+
+            if (error === 'incorrectpassword') {
+                alert('La contraseña ingresada es incorrecta.');
+            } else if (error === 'usernotfound') {
+                alert('El usuario no existe.');
+            }
+        };
+    </script>
 </body>
 </html>
