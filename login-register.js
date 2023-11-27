@@ -1,54 +1,29 @@
-// Listener para el formulario de registro
-// Modificar la función de evento submit para el registro
-document.getElementById('registerForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+const loginForm = document.getElementById('loginForm');
+const registerForm = document.getElementById('registerForm');
 
-    var username = document.getElementById('registerUsername').value;
-    var password = document.getElementById('registerPassword').value;
-    
-    if (esContraseñaSegura(password)) {
-        // Enviar datos al servidor para el registro
-        fetch('register.php', {
-            method: 'POST',
-            body: new URLSearchParams(`username=${username}&password=${password}`)
-        })
-        .then(response => response.text())
-        .then(data => {
-            console.log(data); // Manejar la respuesta del servidor
-        });
+// Función para registrar un nuevo usuario
+registerForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const username = document.getElementById('registerUsername').value;
+    const password = document.getElementById('registerPassword').value;
+
+    // Guardar el usuario y la contraseña en LocalStorage
+    localStorage.setItem(username, password);
+    alert('Usuario registrado con éxito!');
+});
+
+// Función para iniciar sesión
+loginForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const username = document.getElementById('loginUsername').value;
+    const password = document.getElementById('loginPassword').value;
+
+    // Verificar si el usuario y la contraseña coinciden con los almacenados en LocalStorage
+    if (localStorage.getItem(username) === password) {
+        alert('Inicio de sesión exitoso!');
+        // Redireccionar al usuario a la página principal
+        window.location.href = 'dashboard.html';
     } else {
-        alert("La contraseña no es segura...");
+        alert('Nombre de usuario o contraseña incorrectos');
     }
 });
-
-
-// Función para validar la seguridad de la contraseña
-function esContraseñaSegura(password) {
-    var re = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
-    return re.test(password);
-}
-
-// Listener para el formulario de inicio de sesión
-// Modificar la función de evento submit para el inicio de sesión
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    var username = document.getElementById('loginUsername').value;
-    var password = document.getElementById('loginPassword').value;
-
-    // Enviar datos al servidor para el inicio de sesión
-    fetch('login.php', {
-        method: 'POST',
-        body: new URLSearchParams(`username=${username}&password=${password}`)
-    })
-    .then(response => response.text())
-    .then(data => {
-        if (data === "Success") {
-            window.location.href = 'dashboard.html';
-        } else {
-            alert("Usuario o contraseña incorrectos");
-        }
-    });
-});
-
-
